@@ -5,7 +5,7 @@
 			<thead>
 				<tr>
 					<th scope="col">ID</th>
-					<th scope="col">Name</th>
+					<th scope="col">Subject Name</th>
 					
 				</tr>
 			</thead>

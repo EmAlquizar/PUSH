@@ -6,7 +6,7 @@
 			@csrf
 		  <div class="form-group">
 		 
-		    <input type="text" class="form-control" name='name' aria-describedby="emailHelp" placeholder="Strand">
+		    <input type="text" class="form-control" name='name' aria-describedby="emailHelp" placeholder="Strand Name">
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Submit</button>

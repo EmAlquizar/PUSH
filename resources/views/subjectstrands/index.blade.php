@@ -5,6 +5,8 @@
 			<thead>
 				<tr>
 					<th scope="col">ID</th>
+					<th scope="col">Subject ID</th>
+					<th scope="col">Strand ID</th>
 					<th scope="col">Semester</th>
 					<th scope="col">Grade Level</th>
 					
@@ -14,8 +16,11 @@
 				@foreach($subject_strands as $subject_strand)
 					<tr>
 						<td>{{ $subject_strand->id }}</td>
+						<td>{{ $subject_strand->subject->name }}</td>
+						<td>{{ $subject_strand->strand->name }}</td>
 						<td>{{ $subject_strand->semester }}</td>
 						<td>{{ $subject_strand->grade_level }}</td>
+						<td><a href="/subject-strands/{{ $subject_strand->id }}/edit">Edit</a></td>
 						
 					</tr>
 				@endforeach
